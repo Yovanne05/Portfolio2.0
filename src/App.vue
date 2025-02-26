@@ -30,6 +30,7 @@ import FooterView from './views/FooterView.vue'
 }
 
 .footer {
+  text-align: center;
   margin-top: auto;
 }
 

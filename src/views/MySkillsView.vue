@@ -18,7 +18,7 @@ import { allSkillsLogo } from '@/data/skills';
   justify-items: center;
   align-items: center;
   gap: 25px;
-  margin: 0 2em;
+  margin: 0 auto;
 }
 
 .container-logo {
@@ -31,6 +31,7 @@ import { allSkillsLogo } from '@/data/skills';
 .logo {
   width: 80px;
   height: 80px;
+  padding: 2em;
 }
 
 @media (max-width: 1024px) {

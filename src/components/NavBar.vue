@@ -51,7 +51,7 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 13px;
+  font-size: 15px;
   margin-right: 1em;
 }
 
@@ -73,7 +73,7 @@ li {
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
-    padding: 1em;
+    padding: 2em;
   }
 
   .mobile-menu.open {

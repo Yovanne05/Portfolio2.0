@@ -12,9 +12,4 @@ import CardParcours from '@/components/CardParcours.vue';
 import { allExperiences } from '@/data/experience';
 
 </script>
-<style scoped>
-.container-parcours {
-  margin-left: 2em;
-  margin-right: 2em;
-}
-</style>
+<style scoped></style>
