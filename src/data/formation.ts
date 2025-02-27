@@ -8,73 +8,73 @@ export const allFormation: Parcour[] = [
   {
     infoGeneral: {
       name: 'BUT Informatique',
-      image: '/src/assets/formation/iut_montreuil.png',
+      image: '/assets/formation/iut_montreuil.png',
       description: `Spécialisation : réalisation d'applications (conception, développement, validation)`,
       infoTech: {
         skills: [
           {
             name: 'Java',
-            path: '/src/assets/skills/java.png',
+            path: '/assets/skills/java.png',
           },
           {
             name: 'C',
-            path: '/src/assets/skills/c.png',
+            path: '/assets/skills/c.png',
           },
           {
             name: 'HTML',
-            path: '/src/assets/skills/html.png',
+            path: '/assets/skills/html.png',
           },
           {
             name: 'CSS',
-            path: '/src/assets/skills/css.png',
+            path: '/assets/skills/css.png',
           },
           {
             name: 'C#',
-            path: '/src/assets/skills/c_sharp.png',
+            path: '/assets/skills/c_sharp.png',
           },
           {
             name: 'Bootstrap',
-            path: '/src/assets/skills/bootstrap.png',
+            path: '/assets/skills/bootstrap.png',
           },
           {
             name: 'dart',
-            path: '/src/assets/skills/dart.png',
+            path: '/assets/skills/dart.png',
           },
           {
             name: 'flutter',
-            path: '/src/assets/skills/flutter.png',
+            path: '/assets/skills/flutter.png',
           },
           {
             name: 'github',
-            path: '/src/assets/skills/github.png',
+            path: '/assets/skills/github.png',
           },
           {
             name: 'javascript',
-            path: '/src/assets/skills/javascript.png',
+            path: '/assets/skills/javascript.png',
           },
           {
             name: 'mysql',
-            path: '/src/assets/skills/mysql.png',
+            path: '/assets/skills/mysql.png',
           },
           {
             name: 'php',
-            path: '/src/assets/skills/php.png',
+            path: '/assets/skills/php.png',
           },
           {
             name: 'mysql',
-            path: '/src/assets/skills/Postgresql_elephant.png',
+            path: '/assets/skills/Postgresql_elephant.png',
           },
           {
             name: 'python',
-            path: '/src/assets/skills/python.png',
+            path: '/assets/skills/python.png',
           },
           {
             name: 'sass',
-            path: '/src/assets/skills/sass.png',
+            path: '/assets/skills/sass.png',
           },
           {
             name: 'ts',
-            path: '/src/assets/skills/ts.png',
+            path: '/assets/skills/ts.png',
           },
         ],
         bilan: `Mise en place de diverses architectures pour le développement d'applications, telles que le modèle MVC (Modèle-Vue-Contrôleur) et
@@ -106,12 +106,12 @@ export const allDetailedFormation: DetailedParcour[] = [
         Initiation au développement web (Angular) et mobile (Flutter), avec la mise en place de projets plus structurés,
         incluant une architecture back-end et front-end reliée par une API. Les projets sont réalisés au sein d'équipes plus organisées, avec des développeurs et des testeurs,
         afin de garantir la production d'un code correct, maintenable et évolutif.`,
-        image: '/src/assets/formation/service.jpg',
+        image: '/assets/formation/service.jpg',
       },
       {
         title: '1ère année',
         description: `Découverte de la programmation, des bases de données et de l'algorithmique, introduction à la programmation orientée objet (POO) et aux principes du développement d'interfaces homme-machine (IHM). Utilisation principalement des langages Java et C.`,
-        image: '/src/assets/formation/code_developpeur.jpg',
+        image: '/assets/formation/code_developpeur.jpg',
       },
     ],
   },

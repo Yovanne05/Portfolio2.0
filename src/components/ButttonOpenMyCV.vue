@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import cv from '../assets/CV_Yovanne_Ponnou.pdf'
+import cv from '../../public/assets/CV_Yovanne_Ponnou.pdf'
 </script>
 
 <style scoped>
