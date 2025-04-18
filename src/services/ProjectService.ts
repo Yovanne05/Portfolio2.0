@@ -1,4 +1,4 @@
-import { detailedProjects } from '../data/data'
+import { detailedProjects } from '../data/project.ts'
 import type { Project, ProjectInformations } from '../types/types'
 
 export class ProjectService {

@@ -1,13 +1,20 @@
 <template>
-  <div class="container-info">
-    <div class="container-left">
-      <h2>{{ parcourinformation.title }}</h2>
-      <p>{{ parcourinformation.description }}</p>
+  <article class="card">
+    <div class="card-media">
+      <img
+        :src="parcourinformation.image"
+        :alt="parcourinformation.title"
+        class="card-image"
+        loading="lazy"
+      />
+      <div class="card-overlay"></div>
     </div>
-    <div class="container-right">
-      <img :src="parcourinformation.image" alt="image">
+
+    <div class="card-content">
+      <h3 class="card-title">{{ parcourinformation.title }}</h3>
+      <p class="card-description">{{ parcourinformation.description }}</p>
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup lang="ts">
@@ -19,119 +26,110 @@ defineProps<{
 </script>
 
 <style scoped>
-.container-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #181818;
-  border-radius: 2em;
-  height: auto;
-  min-width: 100%;
-  overflow: hidden;
-  padding: 20px;
-}
+.card {
+  --card-radius: 16px;
+  --image-height: 180px;
+  --card-padding: 1.25rem;
+  --card-gap: 0.75rem;
+  --min-width: 280px;
+  --min-height: 300px;
 
-.container-left {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2em;
-  flex: 1;
-  min-width: 50%;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: #1E1E1E;
+  min-width: var(--min-width);
+  min-height: var(--min-height);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.container-left h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+.card-media {
+  position: relative;
+  width: 100%;
+  height: var(--image-height);
+  min-height: var(--image-height);
+  overflow: hidden;
 }
 
-.container-left p {
-  font-size: 1em;
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+  opacity: 0.8;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap);
+  padding: var(--card-padding);
+  flex-grow: 1;
+  min-height: calc(var(--min-height) - var(--image-height));
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
   line-height: 1.4;
 }
 
-.container-right {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-right img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 2em;
+.card-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
 @media (max-width: 1024px) {
-  .container-info {
-    flex-direction: row;
-  }
-
-  .container-left,
-  .container-right {
-    width: 50%;
-    text-align: left;
-    padding: 1.5em;
-  }
-
-  .container-left h2 {
-    font-size: 1.4em;
-  }
-
-  .container-left p {
-    font-size: 1.1em;
-  }
-
-  .container-right img {
-    width: 100%;
-    height: 200px;
+  .card {
+    --image-height: 160px;
+    --card-padding: 1rem;
+    --min-width: 240px;
+    --min-height: 320px;
   }
 }
 
 @media (max-width: 768px) {
-  .container-info {
-    flex-direction: column;
-    align-items: center;
+  .card {
+    --image-height: 140px;
+    --card-gap: 0.5rem;
+    --min-width: 200px;
+    --min-height: 300px;
   }
 
-  .container-left,
-  .container-right {
-    width: 100%;
-    text-align: left;
-    padding: 1em;
+  .card-title {
+    font-size: 1rem;
   }
 
-  .container-left h2 {
-    font-size: 1.2em;
-  }
-
-  .container-left p {
-    font-size: 1em;
-  }
-
-  .container-right img {
-    width: 90%;
-    height: 200px;
+  .card-description {
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  .container-left h2 {
-    font-size: 1em;
-  }
-
-  .container-left p {
-    font-size: 0.9em;
-  }
-
-  .container-right img {
-    width: 100%;
-    height: 200px;
+  .card {
+    --card-radius: 12px;
+    --min-width: 160px;
+    --min-height: 280px;
   }
 }
 </style>

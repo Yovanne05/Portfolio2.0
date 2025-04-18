@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import NavBar from '../components/NavBar.vue'
 import AppTitle from '../components/AppTitle.vue'
-import { navigationPages } from '@/data/data';
+import { navigationPages } from '@/data/project.ts';
 
 </script>
 

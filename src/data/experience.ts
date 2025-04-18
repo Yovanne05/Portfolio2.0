@@ -37,9 +37,12 @@ export const allExperiences: Parcour[] = [
           },
           { name: 'Affinity Designer', path: '/assets/skills/affinity_designer.png' },
         ],
-        bilan: `Utilisation principalement de Photoshop pour la création de maquettes de design, d'affiches, de motifs et d'éléments visuels. Adobe Illustrator et Affinity Designer ont été utilisés pour la conception de fichiers destinés à l'impression, en veillant à
-        la précision des détails et à la qualité des rendus. Ce travail m'a permis de perfectionner mes compétences en design graphique tout en apprenant à adapter
-        mes créations aux besoins spécifiques des clients et aux contraintes techniques liées à l'impression.`,
+        bilan: `
+              • Création de maquettes, affiches et éléments visuels sur Photoshop
+              • Utilisation d'Illustrator et Affinity Designer pour des fichiers destinés à l'impression
+              • Développement de compétences en design graphique et adaptation aux contraintes techniques
+              • Approche orientée client pour répondre à des besoins variés avec précision`
+
       },
     },
     type: 'experience',

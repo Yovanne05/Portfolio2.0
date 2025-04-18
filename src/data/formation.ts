@@ -37,50 +37,52 @@ export const allFormation: Parcour[] = [
             path: '/assets/skills/bootstrap.png',
           },
           {
-            name: 'dart',
+            name: 'Dart',
             path: '/assets/skills/dart.png',
           },
           {
-            name: 'flutter',
+            name: 'Flutter',
             path: '/assets/skills/flutter.png',
           },
           {
-            name: 'github',
+            name: 'Github',
             path: '/assets/skills/github.png',
           },
           {
-            name: 'javascript',
-            path: '/assets/skills/javascript.png',
+            name: 'Javascript',
+            path: '/assets/skills/JavaScript.png',
           },
           {
-            name: 'mysql',
+            name: 'Mysql',
             path: '/assets/skills/mysql.png',
           },
           {
-            name: 'php',
+            name: 'Php',
             path: '/assets/skills/php.png',
           },
           {
-            name: 'mysql',
+            name: 'Mysql',
             path: '/assets/skills/Postgresql_elephant.png',
           },
           {
-            name: 'python',
+            name: 'Python',
             path: '/assets/skills/python.png',
           },
           {
-            name: 'sass',
+            name: 'Sass',
             path: '/assets/skills/sass.png',
           },
           {
-            name: 'ts',
+            name: 'Ts',
             path: '/assets/skills/ts.png',
           },
         ],
-        bilan: `Mise en place de diverses architectures pour le développement d'applications, telles que le modèle MVC (Modèle-Vue-Contrôleur) et
-        les architectures orientées événements. Réalisation de projets en groupe, avec une approche centrée sur les tests, le respect rigoureux d'un cahier des
-         charges et des objectifs communs. Utilisation de GitHub pour la gestion des versions du code, permettant une collaboration fluide entre les membres de l'équipe.
-         Organisation des tâches et suivi de l'avancement des projets grâce à Trello, dans le cadre de sprints efficaces et bien structurés.`,
+        bilan: `
+              • Mise en place d'architectures comme MVC et orientées événements
+              • Développement d'applications avec une approche orientée tests
+              • Travail en équipe avec gestion de projet via GitHub et Trello
+              • Respect de cahiers des charges et réalisation de sprints structurés
+              `,
       },
       id: 3,
       redirection:

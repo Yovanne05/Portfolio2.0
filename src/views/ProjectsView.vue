@@ -12,7 +12,7 @@ import { ProjectService } from '../services/ProjectService';
 import type { Project } from '../types/types';
 
 const projectService = new ProjectService();
-const allProject: Project[] = projectService.getAllProject();
+const allProject: Project[] = projectService.getAllProject().reverse();
 
 </script>
 <style scoped>

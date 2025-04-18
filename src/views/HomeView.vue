@@ -1,4 +1,3 @@
-<!-- Home.vue -->
 <script setup lang="ts">
 import HomeText from '../components/HomeText.vue'
 import ContactCard from '@/components/ContactCard.vue';
